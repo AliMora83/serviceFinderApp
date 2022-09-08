@@ -1,7 +1,6 @@
 //import liraries
 import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, Dimensions,TouchableOpacity,Image } from 'react-native';
-import MapView, { Marker } from 'react-native-maps';
 import * as Location from 'expo-location';
 import ServiceList from './serviceList';
 import Loader from '../Loader';
@@ -88,17 +87,7 @@ const Details = () => {
             {companies != null
 
                 ? <View>
-                    <MapView style={styles.map}
-                        initialRegion={{
-                            latitude: -26.110390,
-                            longitude: 28.053440,
-                            latitudeDelta: 0.0922,
-                            longitudeDelta: 0.0421,
-                        }}
-                        showsUserLocation={true}
-                    >
-                        <RenderMarker />
-                    </MapView>
+                
 
                     <View>
                         <Carousel
